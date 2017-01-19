@@ -1,5 +1,8 @@
 package org.lenscloth.scala.examples
 
+/**
+  * Created by wppark on 2017. 1. 19..
+  */
 object PrefixOperator {
   case class Number(x: Int) {
     // Infix operator
@@ -20,4 +23,3 @@ object PrefixOperator {
     println(s"!1 = ${!Number(1)}")
   }
 }
-
