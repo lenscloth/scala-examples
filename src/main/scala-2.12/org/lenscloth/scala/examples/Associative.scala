@@ -2,14 +2,14 @@ package org.lenscloth.scala.examples
 
 object Associative {
   // Left Associative
-  // Subject verb object
+  // caller method argument
   case class NumberLeft(x: Int) {
     def /(v: Int) = NumberLeft(x / v)
     override def toString = x.toString
   }
 
   // Right Associative
-  // Object verb Subject
+  // argument method caller
   case class NumberRight(x: Int) {
     def /:(v: Int) = NumberRight(v / x)
     override def toString = x.toString
