@@ -42,7 +42,7 @@ object ImplicitEvidence {
     l2.toMap // OK
 
     println("Compiler found required implicit variable")
-    
+
   }
 }
 
